@@ -63,7 +63,10 @@ function buttons () {
 
 
 
-<section class="targeted">
+<section class="targeted" style="background-image: url(./images/NEW.jfif);background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 190vh;">
 <div class="NOTHING d-flex align-items-center justify-content-between px-5">
 <img src="./images/FIFA.png" alt="" style="width: 10rem;height:10rem;">
 <h2>RESULTS</h2>
@@ -110,15 +113,18 @@ function buttons () {
             <div class="modal fade" id="exampleModal_' . $row["IDteam"] . '" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">' . $row["IDteam"] . '</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header d-flex flex-column align-items-center justify-content-center">
+        <img src = "'.$row ["IMG"] .'" alt = "flag">
+        <h3>'.$row ["NAMETEAM"].'</h3>
       </div>
       <div class="modal-body">
-        ...
+        <p>NUMBER OF PLAYERS : '.$row ["NUMplayers"].'</p>
+        <p>CONTINENT : '.$row ["CONTINENTteam"].'</p>
+        <p>CAPITAL : '.$row ["CAPITALteam"].'</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
       </div>
     </div>
   </div>
@@ -137,9 +143,7 @@ function buttons () {
 </section>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+
 
 <!-- Modal -->
 
