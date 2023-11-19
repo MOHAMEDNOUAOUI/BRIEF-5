@@ -1,0 +1,38 @@
+.carda:hover > .card {
+    transform: rotateY(180deg) !important;
+    transition: transform 400ms;
+}
+
+.card {
+    transform-style: preserve-3d;
+    transition: transform 400ms !important;
+    border-radius: 20px !important;
+}
+
+.BACK {
+    transform: rotateY(180deg);
+}
+.FRONT {
+    background: rgb(17,20,24) !important;
+    color: white;
+}
+.FRONT,.BACK {
+    backface-visibility: hidden;
+    border-radius: 20px !important;
+}
+
+#ALL,#groups {
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    transition: 400ms;
+    box-shadow: rgba(249, 0, 0, 0.25) 0px 54px 55px, rgba(251, 0, 0, 0.12) 0px -12px 30px, rgba(251, 0, 0, 0.12) 0px 4px 6px, rgba(255, 0, 0, 0.17) 0px 12px 13px, rgba(255, 0, 0, 0.09) 0px -3px 5px;
+}
+#groups {
+    color: red;
+}
+
+input:hover {
+    transform: scale(1.1);
+    transition: 400ms;
+}
